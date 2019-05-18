@@ -1,8 +1,8 @@
 package com.cystera.secuencia;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Collection;
+import java.util.List;
 import java.util.Optional;
 import java.util.stream.DoubleStream;
 
@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cystera.enums.Estado;
 import com.cystera.secuencia.entities.Auditoria;
 import com.cystera.secuencia.entities.AuditoriaRepository;
 import com.cystera.secuencia.entities.Operando;
@@ -25,8 +24,7 @@ import com.cystera.secuencia.entities.OperandoRepository;
 import com.cystera.secuencia.entities.Respuesta;
 import com.cystera.secuencia.entities.Secuencia;
 import com.cystera.secuencia.entities.SecuenciaRepository;
-
-import oracle.net.aso.e;
+import com.cystera.secuencia.enums.Estado;
 
 @RestController
 @RequestMapping("/api")

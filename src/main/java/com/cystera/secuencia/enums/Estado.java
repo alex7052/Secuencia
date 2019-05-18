@@ -1,4 +1,4 @@
-package com.cystera.enums;
+package com.cystera.secuencia.enums;
 
 public enum Estado {
 	

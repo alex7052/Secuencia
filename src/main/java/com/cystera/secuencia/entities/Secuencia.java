@@ -49,11 +49,22 @@ public class Secuencia {
 	 * @param id
 	 * @param descripcion
 	 */
-	public Secuencia(int id, String descripcion, ArrayList<Operando> operandos) {
+	public Secuencia(long id, String descripcion, ArrayList<Operando> operandos) {
 		this.id = id;
 		this.descripcion = descripcion;
 		this.operandos = operandos;
 	}
+	
+	/**
+	 * Constructor con parametros
+	 * @param descripcion
+	 */
+	public Secuencia(long id, String descripcion) {
+		this.id = id;
+		this.descripcion = descripcion;
+		this.operandos =  new ArrayList<Operando>();
+	}
+
 
 	//Metdodos de la clase
 	
