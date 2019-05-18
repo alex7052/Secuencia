@@ -19,7 +19,7 @@ public class Secuencia {
 	 */
 	@Id
 	@GeneratedValue
-	private int id;
+	private long id;
 	
 	/**
 	 * Descripcion de secuencia
@@ -39,7 +39,7 @@ public class Secuencia {
 	 * Constrcutor sin parametros
 	 */
 	public Secuencia() {
-		this.id = -1;
+		this.id = 0;
 		this.descripcion = "";
 		this.operandos= new ArrayList<Operando>();
 	}
@@ -61,7 +61,7 @@ public class Secuencia {
 	 * retorna el valor de identificador
 	 * @return
 	 */
-	public int getId() {
+	public long getId() {
 		return this.id;
 	}
 	
@@ -69,7 +69,7 @@ public class Secuencia {
 	 * Setea valor de identificador
 	 * @param id
 	 */
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

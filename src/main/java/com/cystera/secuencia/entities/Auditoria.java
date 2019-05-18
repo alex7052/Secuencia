@@ -16,7 +16,7 @@ public class Auditoria {
 	 */
 	@Id
 	@GeneratedValue
-	private int id;
+	private long id;
 	
 	/**
 	 * fecha de registro
@@ -74,7 +74,7 @@ public class Auditoria {
 	 * retorna id de la auditoria
 	 * @return
 	 */
-	public int getId() {
+	public long getId() {
 		return this.id;
 	}
 
@@ -82,7 +82,7 @@ public class Auditoria {
 	 * setea id de la auditoria
 	 * @param id
 	 */
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

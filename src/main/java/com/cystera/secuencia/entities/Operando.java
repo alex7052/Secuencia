@@ -16,7 +16,7 @@ public class Operando {
 	 */
 	@Id
 	@GeneratedValue
-	private int id;
+	private long id;
 	
 	/**
 	 * valor del operando
@@ -38,8 +38,8 @@ public class Operando {
 	 * @param numero
 	 */
 	public Operando() {
-		this.id = -1;
-		this.numero = -1D;
+		this.id = 0;
+		this.numero = 0D;
 		this.secuencia=new Secuencia();
 	}
 	
@@ -60,7 +60,7 @@ public class Operando {
 	 * retorna identificador de operando
 	 * @return
 	 */
-	public int getId() {
+	public long getId() {
 		return this.id;
 	}
 
@@ -68,7 +68,7 @@ public class Operando {
 	 * setea identificador de operando
 	 * @param id
 	 */
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	
