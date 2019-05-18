@@ -45,7 +45,7 @@ public class Auditoria {
 	 * Constrcutor sin parametros
 	 */
 	public Auditoria() {
-		this.id = -1;
+		this.id = 0;
 		this.fecha = LocalDateTime.now();
 		this.operacion = "";
 		this.estadoOperacion = "";
@@ -60,7 +60,7 @@ public class Auditoria {
 	 * @param estadoOperacion
 	 * @param descripcionResultado
 	 */
-	public Auditoria(int id, LocalDateTime fecha, String operacion, String estadoOperacion, String descripcionResultado) {
+	public Auditoria(long id, LocalDateTime fecha, String operacion, String estadoOperacion, String descripcionResultado) {
 		this.id = id;
 		this.fecha = fecha;
 		this.operacion = operacion;
